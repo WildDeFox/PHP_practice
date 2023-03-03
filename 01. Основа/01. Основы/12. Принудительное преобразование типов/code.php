@@ -19,3 +19,5 @@ var_dump((string)$test3);
 $test4 = 12.345;
 var_dump($test4);
 
+
+
