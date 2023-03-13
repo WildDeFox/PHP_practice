@@ -3,10 +3,14 @@
 // Запишите эти данные в сессию. При заходе на другую страницу выведите эти данные на экран.
 session_start();
 
+//if (!empty($_GET)) {
+//    $_SESSION['name'] = $_GET['name'];
+//    $_SESSION['surn'] = $_GET['surn'];
+//    $_SESSION['age'] = $_GET['age'];
+//}
+
 if (!empty($_GET)) {
-    $_SESSION['name'] = $_GET['name'];
-    $_SESSION['surn'] = $_GET['surn'];
-    $_SESSION['age'] = $_GET['age'];
+    $_SESSION = $_GET;
 }
 ?>
 <form action="" method="get">
