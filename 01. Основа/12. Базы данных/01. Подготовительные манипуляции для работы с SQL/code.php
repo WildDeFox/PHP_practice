@@ -10,4 +10,9 @@ mysqli_query($link, "SET NAMES 'utf8'");
 
 $query = 'SELECT * FROM users';
 $result = mysqli_query($link, $query) or die(mysqli_error($link));
-var_dump($result);
+
+// С помощью описанного цикла получите и выведите через var_dump на экран массив всех работников.
+for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row) {
+    var_dump($data);
+}
+echo '<br>';
