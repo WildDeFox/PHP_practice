@@ -1,5 +1,5 @@
 <h1>Регистрация</h1>
-<form action="coe.php" method="POST">
+<form action="code.php" method="POST">
     <label>
         Введите логин:
         <input type="text" name="login">
