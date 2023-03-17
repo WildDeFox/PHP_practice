@@ -11,12 +11,12 @@ mysqli_query($link, "SET NAMES 'utf8'");
 if (!empty($_POST['login']) and !empty($_POST['password']) and !empty($_POST['confirm'])) {
     if ($_POST['password'] == $_POST['confirm']) {
         $login = $_POST['login'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $confirm = $_POST['confirm'];
         $email = $_POST['email'];
         $date = $_POST['date'];
 
-        $query = "SELECT * FROM users WHERE name='$login'";
+        $query = "SELECT * FROM users WHERE name='$login'";  // получаем юзера по логину
         $user = mysqli_fetch_assoc(mysqli_query($link, $query));
 
         if (empty($user)) {
@@ -27,6 +27,7 @@ if (!empty($_POST['login']) and !empty($_POST['password']) and !empty($_POST['co
 
             $id = mysqli_insert_id($link);
             $_SESSION['id'] = $id;
+            header('Location: main.php');
         } else {
             echo 'Логин уже занят!';
         }
