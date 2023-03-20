@@ -11,6 +11,8 @@ curl_setopt($curl, CURLOPT_URL, $url);
 // Ответ сервера сохранять в переменную
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
+// curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
+
 // Выполняем запрос:
 $res = curl_exec($curl);
 
