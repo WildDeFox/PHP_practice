@@ -1,6 +1,6 @@
 <?php
 class User {
-    private $name;
+    protected $name;
     private $age;
 
     public function __construct($name, $age) {
@@ -15,8 +15,12 @@ class User {
         return $this -> age;
     }
 
+    // Модифицируйте код класса User так, чтобы в методе setName выполнялась
+    // проверка того, что длина имени более 3-х символов.
     public function setName($name) {
-        $this -> name = $name;
+        if (count($name) > 3) {
+            $this -> name = $name;
+        }
     }
 
     public function setAge($age) {
