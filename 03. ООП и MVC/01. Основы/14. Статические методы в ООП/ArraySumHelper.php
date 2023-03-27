@@ -27,7 +27,6 @@ class ArraySumHelper
         foreach ($arr as $elem) {
             $sum += pow($elem, $power);
         }
-
         return $sum;
     }
 }
