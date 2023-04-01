@@ -1,7 +1,7 @@
 <?php
 trait Trait3
 {
-  private function method3()
+  private function method()
   {
     return 3;
   }
