@@ -1,5 +1,10 @@
 <?php
 require_once 'Quadrate.php';
+require_once 'FiguresCollection.php';
 
-$obj1 = new Quadrate(23);
-echo $obj1 -> getSquare();
+$figuresCollection = new FiguresCollection;
+
+$figuresCollection -> addFigure(new Quadrate(2));
+$figuresCollection -> addFigure(new Quadrate(3));
+
+echo $figuresCollection -> getTotalSquare();
