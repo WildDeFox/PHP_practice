@@ -1,5 +1,5 @@
 <?php
-interface is_file
+interface iFile
 {
   public function __construct($filePath);
 
