@@ -47,4 +47,9 @@ class File implements iFile
   {
     file_put_contents($this -> filePath, $text);
   }
+
+  public function appendText($text)
+  {
+    file_put_contents($this -> filePath, $text, FILE_APPEND);
+  }
 }

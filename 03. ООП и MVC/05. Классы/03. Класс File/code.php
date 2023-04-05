@@ -16,6 +16,8 @@ echo $text -> getName() . '<br>';
 echo $text -> getExt() . '<br>';
 echo $text -> getSize() . '<br>';
 
-echo $text -> getText() . '<br>';
-$text -> setText('Тестовая строка, проверающая работоспособнось метода');
-echo $text -> getText() . '<br>';
+// echo $text -> getText() . '<br>';
+// $text -> setText('Тестовая строка, проверающая работоспособнось метода');
+// echo $text -> getText() . '<br>';
+// $text -> appendText('Пробуем добавить текст в конец файла...');
+// echo $text -> getText() . '<br>';
