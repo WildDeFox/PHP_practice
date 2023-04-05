@@ -42,4 +42,9 @@ class File implements iFile
   {
     return file_get_contents($this -> filePath);
   }
+
+  public function setText($text)
+  {
+    file_put_contents($this -> filePath, $text);
+  }
 }

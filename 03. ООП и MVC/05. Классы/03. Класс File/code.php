@@ -17,3 +17,5 @@ echo $text -> getExt() . '<br>';
 echo $text -> getSize() . '<br>';
 
 echo $text -> getText() . '<br>';
+$text -> setText('Тестовая строка, проверающая работоспособнось метода');
+echo $text -> getText() . '<br>';
