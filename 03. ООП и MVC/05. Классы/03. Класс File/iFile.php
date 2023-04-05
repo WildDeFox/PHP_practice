@@ -5,9 +5,9 @@ interface iFile
 
   public function getPath(); // путь к файлу
   public function getDir(); // папка файла
-  // public function getName(); // имя файла
-  // public function getExt(); // расширение файла
-  // public function getSize(); // размер файла
+  public function getName(); // имя файла
+  public function getExt(); // расширение файла
+  public function getSize(); // размер файла
 
   // public function getText(); // получает текст файла
   // public function setText($text); // устанавливает текст файла

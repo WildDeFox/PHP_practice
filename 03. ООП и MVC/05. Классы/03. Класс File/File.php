@@ -22,4 +22,14 @@ class File implements iFile
     $result = str_replace($replaceText . '\\', '', $replaceString);
     return $result;
   }
+
+  public function getName() 
+  {
+    return $this -> pathInfo['filename'];
+  }
+
+  public function getExt()
+  {
+    return $this -> pathInfo['extension'];
+  }
 }
