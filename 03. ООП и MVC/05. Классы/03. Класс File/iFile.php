@@ -9,7 +9,7 @@ interface iFile
   public function getExt(); // расширение файла
   public function getSize(); // размер файла
 
-  // public function getText(); // получает текст файла
+  public function getText(); // получает текст файла
   // public function setText($text); // устанавливает текст файла
   // public function appendText($text); // добавляет текст в конец файла
 

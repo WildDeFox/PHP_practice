@@ -37,4 +37,9 @@ class File implements iFile
   {
     return filesize($this -> filePath);
   }
+
+  public function getText()
+  {
+    return file_get_contents($this -> filePath);
+  }
 }
