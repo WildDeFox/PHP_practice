@@ -32,4 +32,9 @@ class File implements iFile
   {
     return $this -> pathInfo['extension'];
   }
+
+  public function getSize()
+  {
+    return filesize($this -> filePath);
+  }
 }

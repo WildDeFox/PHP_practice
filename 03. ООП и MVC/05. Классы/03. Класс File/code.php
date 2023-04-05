@@ -6,3 +6,4 @@ echo $obj -> getPath() . '<br>';
 echo $obj -> getDir() . '<br>';
 echo $obj -> getName() . '<br>';
 echo $obj -> getExt() . '<br>';
+echo $obj -> getSize() . '<br>';
