@@ -52,4 +52,9 @@ class File implements iFile
   {
     file_put_contents($this -> filePath, $text, FILE_APPEND);
   }
+
+  public function copy($copyPath)
+  {
+    rename($this -> filePath, $copyPath);
+  }
 }
