@@ -10,6 +10,10 @@ class Tag
     $this -> attrs = $attrs; // Записываем атрибуты в свойство
   }
 
+  public function getName() {
+    return $this->name;
+  }
+
   // Выводим открывающую часть тега:
   public function open()
   {
@@ -34,6 +38,7 @@ class Tag
         $result .= "$name=\"$value\"";
       }
       return $result;
+      
     } else {
       return '';
     }
